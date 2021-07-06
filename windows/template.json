@@ -82,7 +82,8 @@
 				"echo 'address {{user `ip`}}' >> /etc/network/interfaces",
 				"echo 'netmask {{user `netmask`}}' >> /etc/network/interfaces",
 				"echo 'gateway {{user `gateway`}}' >> /etc/network/interfaces",
-				"echo 'dns-nameservers 8.8.8.8 8.8.4.4' >> /etc/network/interfaces"
+				"echo 'dns-nameservers 8.8.8.8 8.8.4.4' >> /etc/network/interfaces",
+				"DEBIAN_FRONTEND=noninteractive apt-get -y install open-iscsi"
 			]
 		}
 	],
